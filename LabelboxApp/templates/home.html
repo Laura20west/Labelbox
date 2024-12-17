@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Laura's Ecommerce sample</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="/static/images/BLtech.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+
+<body style="background-color:#E0BBE4;">
+
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid mb-5">
+        <div class="row border-top px-xl-5">
+
+            <div class="change" style="width:100%;">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">BL</span>Shop</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0" >
+                            <a href="#" class="nav-item nav-link active">Shop</a>
+                            <a href="#" class="nav-item nav-link ">Home</a>
+                            <a href="#" class="nav-item nav-link">Contact</a>
+                            <a href="#" class="nav-item nav-link ">Services</a>
+
+
+
+                        </div>
+
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Page Header Start -->
+
+    <!-- Page Header End -->
+
+    <div class="col-12 pb-1">
+
+    <!-- Shop Start -->
+    <div class="container-fluid pt-5">
+        <div class="row px-xl-5">
+            <!-- Shop Sidebar Start -->
+
+            <!-- Shop Sidebar End -->
+
+
+            <!-- Shop Product Start -->
+            <div >
+                <div class="pb-3" style="display: flex; flex-wrap: wrap;">
+                    <div class="col-12 pb-1">
+
+                    </div>
+                    {% for Album in Albums %}
+                    <div class="col-lg-4" style="height: 30%; width: 10%;">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img src="{{ Album.hotel_Main_Img.url }}" alt="" style="height:100%; width:100%;">
+                            </div>
+
+
+
+
+                    </div>
+                    {% endfor %}
+
+
+                </div>
+            </div>
+            <!-- Shop Product End -->
+        </div>
+    </div>
+    <!-- Shop End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-dark mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <a href="" class="text-decoration-none">
+                    <h1 class="mb-4 display-5 font-weight-semi-bold">BL<span class="text-primary font-weight-bold border border-white px-3 mr-1">Shop</span></h1>
+                </a>
+                <p>Choose to shop your lazy order at BLShop</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Calabar municipal</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"><a href="mailto:Laurettaiyafemeh@gmail.com">Email me</a></i></p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+2348130630541</p>
+            </div>
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom text-primary" href="mailto:Laurettaiyafemeh@gmail.com">Laura</a>, All Right Reserved.
+                    </div>
+        </div>
+
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
